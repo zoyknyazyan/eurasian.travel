@@ -957,9 +957,23 @@ __wm.bt(750,27,25,2,"web","https://eurasian.travel/","20250121120239",1996,"http
 			    
     <a href="index.html" class="home-link"><i class="fa fa-home"></i></a>
  <!--  <div id="primary-toggle-button">MENU<i class="fa fa-bars"></i></div> -->
-   <button id="primary-toggle-button" aria-label="Toggle Menu">
+   <div id="primary-toggle-button" role="button" tabindex="0" aria-label="Toggle Menu">
   MENU <i class="fa fa-bars"></i>
-</button>
+</div>
+ 
+
+
+<script>
+const toggleButton = document.getElementById('primary-toggle-button');
+
+function toggleMenu() {
+  console.log('Menu toggled');
+  // your menu toggle logic here
+}
+
+toggleButton.addEventListener('click', toggleMenu);
+toggleButton.addEventListener('touchstart', toggleMenu);
+</script>
 
 
         
