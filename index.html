@@ -964,16 +964,21 @@ __wm.bt(750,27,25,2,"web","https://eurasian.travel/","20250121120239",1996,"http
 
 
 <script>
-const toggleButton = document.getElementById('primary-toggle-button');
 
-function toggleMenu() {
-  console.log('Menu toggled');
-  // your menu toggle logic here
-}
+  const toggleButton = document.getElementById('primary-toggle-button');
 
-toggleButton.addEventListener('click', toggleMenu);
-toggleButton.addEventListener('touchstart', toggleMenu);
+  function toggleMenu(e) {
+    e.preventDefault(); // prevents double-tap zoom on iOS
+    console.log('Menu toggled'); // helps test if it works
+    // Example logic: toggle class
+    document.body.classList.toggle('menu-open');
+  }
+
+  // Use both click and touchstart for iOS Safari reliability
+  toggleButton.addEventListener('click', toggleMenu);
+  toggleButton.addEventListener('touchstart', toggleMenu);
 </script>
+
 
 
         
