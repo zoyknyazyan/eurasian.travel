@@ -3,11 +3,13 @@ document.addEventListener('DOMContentLoaded', function () {
   const nav = document.getElementById('site-navigation');
 
   if (toggleButton && nav) {
-    const toggleMenu = function () {
-      nav.classList.toggle('active');
-    };
+    toggleButton.addEventListener('click', function (e) {
+      e.preventDefault();
 
-    toggleButton.addEventListener('click', toggleMenu);
-    toggleButton.addEventListener('touchstart', toggleMenu);
+      const isActive = nav.classList.toggle('active');
+
+      // Optional: for accessibility
+      toggleButton.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+    });
   }
 });
