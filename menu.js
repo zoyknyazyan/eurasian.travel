@@ -13,3 +13,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+
+toggleButton.addEventListener('click', function (e) {
+  e.preventDefault();
+  alert("Menu button clicked!"); // Add this line
+  nav.classList.toggle('active');
+});
