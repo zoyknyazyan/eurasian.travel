@@ -1,7 +1,7 @@
 import os
 
 # Folder containing your images
-folder = r"SSN\images"
+folder = r"mix-photolook\images"
 
 # Allowed image extensions
 image_exts = [".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp", ".tiff"]
