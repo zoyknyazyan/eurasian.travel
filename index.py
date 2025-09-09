@@ -1,7 +1,7 @@
 import os
 
 # Set your root directory
-root_dir = 'invoice/'  # change this if needed
+root_dir = 'mix/'  # change this if needed
 
 for subdir, _, files in os.walk(root_dir):
     for file in files:
