@@ -1,7 +1,7 @@
 import os
 
 # Set your root directory
-root_dir = 'health-insurance-card/'  # change this if needed
+root_dir = 'ID-card/'  # change this if needed
 
 for subdir, _, files in os.walk(root_dir):
     for file in files:
