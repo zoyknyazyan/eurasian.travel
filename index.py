@@ -1,7 +1,7 @@
 import os
 
 # Set your root directory
-root_dir = 'credit-card-photolook/'  # change this if needed
+root_dir = 'driving-license/'  # change this if needed
 
 for subdir, _, files in os.walk(root_dir):
     for file in files:
