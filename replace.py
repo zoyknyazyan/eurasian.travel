@@ -1,10 +1,10 @@
 import os
 
 # Set your root directory
-root_dir = 'travel-visa/'
+root_dir = 'utility-bill/'
 
 # First, let's extract the exact old nav from one of your files
-sample_file = 'travel-visa/andorra-e-visa-in-word-and-pdf-template.html'  # Use one of your actual files
+sample_file = 'utility-bill/albania-albanian-power-corporation.html'  # Use one of your actual files
 with open(sample_file, 'r', encoding='utf-8') as f:
     content = f.read()
 
